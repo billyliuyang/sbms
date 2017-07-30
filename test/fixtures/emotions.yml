@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current_hr: 1
+  emotion_v: 1
+  emotion_a: 1
+  user: one
+
+two:
+  current_hr: 1
+  emotion_v: 1
+  emotion_a: 1
+  user: two

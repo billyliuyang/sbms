@@ -1,0 +1,12 @@
+<fieldset>
+	<legend>Emotion collection</legend>
+	<%= form_tag do %>
+	  <div class="form-group">
+	    <%= label_tag "Current HR" %>
+    	<%= number_field_tag :currenthr, params[:currenthr] %>
+	  </div>
+	  <div>
+	    <%= submit_tag "Submit" %>
+	  </div>
+	<% end %>
+</fieldset>

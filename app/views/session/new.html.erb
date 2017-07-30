@@ -1,0 +1,24 @@
+<fieldset>
+	<legend>Please login</legend>
+	<%= form_tag do %>
+	  <div class="form-group">
+	    <label class="sr-only" for="exampleInputEmail3">UserName</label>
+	    <%= text_field_tag :name, params[:name], placeholder: 'User name' %>
+	  </div>
+	  <div class="form-group">
+	    <label class="sr-only" for="exampleInputPassword3">Password</label>
+	    <%= password_field_tag :password, params[:password], placeholder: 'Password' %>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox"> Remember me
+	    </label>
+	  </div>
+	  <div>
+	    <%= submit_tag "Login" %>
+	  </div>
+	  <div>
+	  	<%= link_to "Sign up", new_user_path %>
+	  </div>
+	<% end %>
+</fieldset>
